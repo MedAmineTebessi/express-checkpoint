@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #343a40; 
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            width: 40px; 
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+            font-size: 1.1rem;
+            margin-left: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f39c12 !important; 
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff; 
+        }
+
+        .navbar-toggler {
+            border-color: #ffffff; 
+        }
+
+        .titlenav {
+            font-size: 1.5rem;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .service-title {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .service-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-card-body {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .service-card-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .service-card-text {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .service-btn {
+            background-color: #f39c12;
+            color: #fff;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .service-btn:hover {
+            background-color: #e67e22;
+        }
+
+        .other-services ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.1rem;
+        }
+
+        .other-services li {
+            padding: 8px 0;
+            color: #555;
+        }
+
+        .other-services li strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="logonobckgrnd.png" alt="Logo" class="d-inline-block align-text-top">
+                    <span class="titlenav">The Village Lounge</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="http://localhost:4000/">Home</a>
+                        <a class="nav-link" href="http://localhost:4000/OurServices">Our Services</a>
+                        <a class="nav-link" href="http://localhost:4000/Contactus">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="service-title">
+            <h1>Our Services</h1>
+            <p>At The Village Lounge, we provide a variety of services to ensure that our guests enjoy the best experience. Whether you're here for a relaxed evening or a fun night out with friends, we have something for everyone.</p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="Livemusic.jpg" class="card-img-top" alt="Live Music">
+                    <div class="service-card-body">
+                        <h5 class="service-card-title">Live Music</h5>
+                        <p class="service-card-text">Enjoy live performances from talented local artists. Whether you're into jazz, blues, or contemporary hits, we host regular live music events to keep the atmosphere lively and fun.</p>
+                        <a href="#" class="service-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="food&drink.jpg" class="card-img-top" alt="Delicious Food & Drinks">
+                    <div class="service-card-body">
+                        <h5 class="service-card-title">Delicious Food & Drinks</h5>
+                        <p class="service-card-text">Our menu is designed to satisfy your cravings. From delicious appetizers to hearty meals and expertly crafted cocktails, we have something for every taste.</p>
+                        <a href="#" class="service-btn">Explore Our Menu</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="hosting.jpg" class="card-img-top" alt="Event Hosting">
+                    <div class="service-card-body">
+                        <h5 class="service-card-title">Event Hosting</h5>
+                        <p class="service-card-text">Planning a celebration, corporate event, or special occasion? Let us handle the details. We offer event hosting services with customizable packages to fit your needs.</p>
+                        <a href="#" class="service-btn">Book an Event</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="other-services my-5">
+            <h2>Other Services</h2>
+            <ul>
+                <li><strong>Private Rooms:</strong> For a more intimate experience, we offer private rooms for small gatherings or meetings.</li>
+                <li><strong>Happy Hour:</strong> Come and enjoy discounted drinks during our happy hour from 5 PM to 7 PM.</li>
+                <li><strong>Outdoor Seating:</strong> Enjoy our beautiful outdoor seating area, perfect for a sunny afternoon or an evening under the stars.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
